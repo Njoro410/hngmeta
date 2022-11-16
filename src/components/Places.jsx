@@ -9,7 +9,7 @@ const Places = () => {
           Inspiration for your next adventure
         </p>
       </section>
-      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <section className="flex flex-col items-center md:grid grid-cols-2 lg:grid-cols-4">
         <div className="m-1">
           <img src={frame151} alt="" />
         </div>

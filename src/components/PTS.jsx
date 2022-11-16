@@ -18,7 +18,7 @@ import frame143_15 from "../resources/ptc/row4/4051.png";
 
 const PTS = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:mx-32 my-12">
+    <div className="flex flex-col justify-center items-center md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:mx-32 my-12">
       <div className="m-1">
         <img src={frame143} alt="" />
       </div>
