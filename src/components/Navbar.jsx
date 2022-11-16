@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const handleClose = () => setNav(!nav);
+  // const handleClose = () => setNav(!nav);
   return (
     <div className="flex justify-between items-center container mt-8 font-redRose">
       <div className="flex gap-[10rem] m-5">
@@ -30,7 +30,7 @@ const Navbar = () => {
             <li>Home</li>
           </a>
           <a href="http://">
-            <li>Place to stay</li>
+            <Link to='/placetostay'>Place to stay</Link>
           </a>
           <a href="http://">
             <li>NFTs</li>
