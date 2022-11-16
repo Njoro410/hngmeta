@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import logo from "../resources/logo.svg";
 import Modal from "./Modal";
@@ -12,72 +13,70 @@ const Navbar = () => {
   // const handleClose = () => setNav(!nav);
   return (
     <div className="flex justify-between items-center container mt-8 font-redRose">
-      <div className="flex gap-[10rem] m-5">
-        <section>
-          <img className="w-32 md:w-full" src={logo} alt="" />
-        </section>
-        <div className="md:hidden mr-4 z-10" onClick={handleClick}>
-          {!nav ? (
-            <GiHamburgerMenu className="w-5" />
-          ) : (
-            <MdOutlineClose className="w-5" />
-          )}
-        </div>
-      </div>
+      <section className="flex justify-between items-center m-5">
+        <img className="w-32 md:w-full" src={logo} alt="" />
+      </section>
+
       <div className="hidden md:flex">
-        <ul className="flex gap-4">
-          <a href="http://">
-            <li>Home</li>
+        <ul className="flex gap-8">
+          <a>
+            <Link to="/">Home</Link>
           </a>
-          <a href="http://">
-            <Link to='/placetostay'>Place to stay</Link>
+          <a>
+            <Link to="/placetostay">Place to stay</Link>
           </a>
-          <a href="http://">
+          <a>
             <li>NFTs</li>
           </a>
-          <a href="http://">
+          <a>
             <li>Community</li>
           </a>
         </ul>
       </div>
-      <div className="hidden md:flex">
+      <div className="">
         <button
           onClick={() => setShowModal(true)}
-          className="w-[170px] h-[48px] left-[1070px] gap-[10px] bg-[#A02279] rounded-[10px] font-redRose not-italic font-normal text-[16px] leading-5 text-white"
+          className="hidden md:block w-[170px] h-[48px] left-[1070px] gap-[10px] bg-[#A02279] rounded-[10px] font-redRose not-italic font-normal text-[16px] leading-5 text-white"
         >
           Connect wallet
         </button>
+        <div className="md:hidden mr-4 z-10" onClick={handleClick}>
+          {!nav ? (
+            <GiHamburgerMenu fontSize="1.5rem" />
+          ) : (
+            <MdOutlineClose fontSize="1.5rem" />
+          )}
+        </div>
         {showModal ? <Modal setShowModal={setShowModal} /> : null}
       </div>
 
       <ul
-        className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8 mt-60"}
+        className={
+          !nav ? "hidden" : "absolute bg-zinc-200 w-full px-8 mt-[17rem]"
+        }
       >
-        <ul className="flex flex-col gap-4">
-          <a href="http://">
-            <li>Home</li>
+        <ul className="flex flex-col gap-4 text-[#A02279]">
+          <a className="mt-2">
+            <Link to="/">Home</Link>
           </a>
-          <a href="http://">
-            <li>Place to stay</li>
+          <a>
+            <Link to="/placetostay">Place to stay</Link>
           </a>
-          <a href="http://">
+          <a>
             <li>NFTs</li>
           </a>
-          <a href="http://">
+          <a>
             <li>Community</li>
           </a>
         </ul>
 
-
-
-
         <div className="flex flex-col my-4">
-        <button
-          onClick={() => setShowModal(true)}
-          className="w-[170px] h-[48px] left-[1070px] gap-[10px] bg-[#A02279] rounded-[10px] font-redRose not-italic font-normal text-[16px] leading-5 text-white"
-        >
-          Connect wallet
-        </button>
+          <button
+            onClick={() => setShowModal(true)}
+            className="w-[170px] h-[48px] left-[1070px] gap-[10px] bg-[#A02279] rounded-[10px] font-redRose not-italic font-normal text-[16px] leading-5 text-white"
+          >
+            Connect wallet
+          </button>
         </div>
       </ul>
     </div>

@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
         </section>
         <section>
-          <div class="flex ">
+          <div class="flex mt-6">
             <input
               type="text"
               class="w-96 h-[54px] top-[346.08px] p-5 rounded-tl-[8px] rounded-tr-[0px] rounded-br-[0px] rounded-bl-[8px] border border-[#a3a3a3] placeholder:font-redRose placeholder:font-normal placeholder:not-italic text-[14px] placeholder:text-[#B8B8B8] placeholder:leading-[130%] focus:outline-none"
@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </section>
       </div>
-      <div className="m-5 w-[25rem]">
+      <div className="m-5 w-[20rem] md:w-[30rem]">
         <img src={Pics} alt="" />
       </div>
 
