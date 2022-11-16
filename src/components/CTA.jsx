@@ -4,7 +4,7 @@ import skewed from "../resources/skewed.png"
 const CTA = () => {
   return (
     <div className="w-full mt-12 h-[550px] bg-[#A02279] grid grid-cols-1 md:grid-cols-2">
-      <div className="container mx-auto px-5 md:ml-8">
+      <div className="container m-auto px-5 md:ml-8">
         <p className="font-redRose font-bold text-4xl md:text-5xl leading-[3.75rem] text-white ">Metabnb NFTs</p>
         <p className="font-redRose font-normal text-lg text-white mb-4">
           Discover our NFT gift cards collection. Loyal customers gets amazing
