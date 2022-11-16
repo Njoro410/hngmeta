@@ -1,6 +1,12 @@
 import React from "react";
-import frame151 from "../resources/Frame 143.png";
-
+import one from "../resources/places1/Group 4048.png";
+import two from "../resources/places1/Group 4049.png";
+import three from "../resources/places1/Group 4050.png";
+import four from "../resources/places1/Group 4051.png";
+import five from "../resources/places2/Group 4048.png";
+import six from "../resources/places2/Group 4049.png";
+import seven from "../resources/places2/Group 4050.png";
+import eight from "../resources/places2/Group 4051.png";
 const Places = () => {
   return (
     <div className="container mx-auto">
@@ -11,28 +17,28 @@ const Places = () => {
       </section>
       <section className="flex flex-col justify-center items-center md:grid grid-cols-2 lg:grid-cols-4">
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={one} alt="" />
         </div>
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={two} alt="" />
         </div>
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={three} alt="" />
         </div>
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={four} alt="" />
         </div>
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={five} alt="" />
         </div>
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={six} alt="" />
         </div>
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={seven} alt="" />
         </div>
         <div className="m-1">
-          <img src={frame151} alt="" />
+          <img src={eight} alt="" />
         </div>
       </section>
     </div>
