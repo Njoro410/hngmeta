@@ -12,6 +12,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   // const handleClose = () => setNav(!nav);
   return (
+    <div className="flex justify-center items-center">
     <div className="flex justify-between items-center container mt-8 font-redRose">
       <section className="flex justify-between items-center m-5">
         <img className="w-32 md:w-full" src={logo} alt="" />
@@ -79,6 +80,7 @@ const Navbar = () => {
           </button>
         </div>
       </ul>
+    </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </section>
       </div>
-      <div className="m-5 w-[20rem] md:w-[30rem]">
+      <div className="m-5 md:m-2 w-[20rem] md:w-[20rem] lg:w-[30rem]">
         <img src={Pics} alt="" />
       </div>
 

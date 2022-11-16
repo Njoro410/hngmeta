@@ -8,7 +8,7 @@ import twitter from "../resources/twitter.svg"
 const Footer = () => {
   return (
     <div className='w-full h-full text-white font-redRose bg-[#1d1d1e] '>
-        <section className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+        <section className='flex flex-col  md:grid grid-cols-2 lg:grid-cols-4'>
         <div>
             <section className='m-8'>
             <img src={group} alt="logo" />  
